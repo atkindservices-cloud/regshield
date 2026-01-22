@@ -1,0 +1,11 @@
+RBI - Digital Lending Guidelines:
+URL:rbi.org.in
+
+RBI - Data Storage & Localization:
+URL:rbi.org.in
+
+SEBI - Algorithmic Trading Advisory:
+URL:sebi.gov.in
+
+GST - Data Retention Rules:
+URL:gst.gov.in
