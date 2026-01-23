@@ -1,0 +1,21 @@
+{
+  "rule_id": "FTC__GLBA_Safeguards_Rule_16_CFR_Part_314",
+  "authority": "FTC / NIST",
+  "scope": "US Businesses",
+  "applies_if": [
+    "Handles customer data",
+    "Operates in the US"
+  ],
+  "required_controls": [
+    "Access control",
+    "Data encryption",
+    "Incident response plan"
+  ],
+  "evidence_required": [
+    "Security policy",
+    "Encryption configuration",
+    "Access logs"
+  ],
+  "risk_level": "HIGH",
+  "penalty": "Regulatory action, fines"
+}

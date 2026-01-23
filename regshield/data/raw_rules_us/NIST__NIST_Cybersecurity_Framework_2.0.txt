@@ -1,0 +1,4 @@
+NIST - NIST Cybersecurity Framework 2.0
+https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf
+
+[PDF downloaded as binary not parsed in this step]

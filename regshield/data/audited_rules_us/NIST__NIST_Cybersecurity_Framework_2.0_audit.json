@@ -1,0 +1,11 @@
+{
+  "rule": "NIST__NIST_Cybersecurity_Framework_2.0",
+  "questions": [
+    "Explain how your company complies with NIST__NIST_Cybersecurity_Framework_2.0.",
+    "What policies exist to enforce NIST__NIST_Cybersecurity_Framework_2.0?",
+    "Who is responsible for compliance with NIST__NIST_Cybersecurity_Framework_2.0?",
+    "What evidence can you provide for NIST__NIST_Cybersecurity_Framework_2.0 compliance?",
+    "What happens if this control fails?"
+  ],
+  "status": "PASS (manual evidence detected)"
+}

@@ -1,0 +1,1 @@
+SOC 2 Security principle requires protection against unauthorized access, secure access controls, logging, monitoring, and incident response.

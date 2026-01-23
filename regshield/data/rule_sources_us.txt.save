@@ -1,0 +1,5 @@
+text;nano regshield/scripts/run_collector_us.py
+^x
+
+python -m regshield.scripts.run_collector_us
+

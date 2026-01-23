@@ -1,0 +1,26 @@
+from pathlib import Path
+import json
+
+def audit_rule(rule_text: str, rule_name: str):
+    rule_keywords = {
+        "NIST": ["nist", "security", "cyber"],
+        "GLBA": ["glba", "privacy", "safeguard"],
+    }
+
+    evidence_dir = Path("regshield/data/evidence_us")
+    has_evidence = False\n    for k, words in rule_keywords.items():\n        if k.lower() in rule_name.lower():\n            has_evidence = any(any(w in f.name.lower() for w in words) for f in evidence_dir.glob("*"))
+    evidence_status = "PASS (manual evidence detected)" if has_evidence else "FAIL (no evidence found)"
+
+    questions = [
+        f"Explain how your company complies with {rule_name}.",
+        f"What policies exist to enforce {rule_name}?",
+        f"Who is responsible for compliance with {rule_name}?",
+        f"What evidence can you provide for {rule_name} compliance?",
+        f"What happens if this control fails?"
+    ]
+
+    return {
+        "rule": rule_name,
+        "questions": questions,
+        "status": evidence_status,
+    }

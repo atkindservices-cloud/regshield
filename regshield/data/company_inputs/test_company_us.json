@@ -1,0 +1,7 @@
+{
+  "company_name": "Test FinTech Inc",
+  "country": "US",
+  "industry": "FinTech",
+  "employees": 45,
+  "data_types": ["PII", "Financial Data"]
+}

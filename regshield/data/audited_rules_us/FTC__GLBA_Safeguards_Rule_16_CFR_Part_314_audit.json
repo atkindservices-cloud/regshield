@@ -1,0 +1,11 @@
+{
+  "rule": "FTC__GLBA_Safeguards_Rule_16_CFR_Part_314",
+  "questions": [
+    "Explain how your company complies with FTC__GLBA_Safeguards_Rule_16_CFR_Part_314.",
+    "What policies exist to enforce FTC__GLBA_Safeguards_Rule_16_CFR_Part_314?",
+    "Who is responsible for compliance with FTC__GLBA_Safeguards_Rule_16_CFR_Part_314?",
+    "What evidence can you provide for FTC__GLBA_Safeguards_Rule_16_CFR_Part_314 compliance?",
+    "What happens if this control fails?"
+  ],
+  "status": "PASS (manual evidence detected)"
+}

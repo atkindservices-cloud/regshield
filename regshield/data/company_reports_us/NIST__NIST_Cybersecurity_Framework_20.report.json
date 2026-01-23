@@ -1,0 +1,30 @@
+{
+  "title": "NIST__NIST_Cybersecurity_Framework_20",
+  "source": "US",
+  "url": "",
+  "status": "PASS",
+  "findings": [],
+  "generated_at": "2026-01-23T06:23:18.346371Z",
+  "company": {
+    "company_name": "Demo SaaS Inc",
+    "country": "US",
+    "industry": "SaaS",
+    "data_types": [
+      "email",
+      "payment"
+    ],
+    "security_controls": {
+      "encryption_at_rest": true,
+      "encryption_in_transit": true,
+      "access_control": true,
+      "incident_response": false,
+      "vendor_management": false
+    },
+    "cloud_provider": "AWS",
+    "employees": 12,
+    "compliance_targets": [
+      "NIST_CSF_2.0",
+      "FTC_GLBA"
+    ]
+  }
+}

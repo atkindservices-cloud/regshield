@@ -1,0 +1,38 @@
+from pathlib import Path
+from regshield.agents.rule_collector import collect_rule
+
+RAW_DIR_US = Path("regshield/data/raw_rules_us")
+RAW_DIR_US.mkdir(parents=True, exist_ok=True)
+
+RULES_US = [
+    (
+        "NIST",
+        "NIST Cybersecurity Framework 2.0",
+        "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    ),
+    (
+        "FTC",
+        "GLBA Safeguards Rule (16 CFR Part 314)",
+        "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+    ),
+]
+
+def main():
+    success = 0
+    for src, title, url in RULES_US:
+        print("Collecting:", title)
+        ok = collect_rule(src, title, url, RAW_DIR_US)
+        if ok:
+            success += 1
+    print("SUCCESS COUNT:", success)
+
+if __name__ == "__main__":
+    main()
+
+from pathlib import Path
+
+RULE_SOURCES_FILE = Path("regshield/data/rule_sources_us.txt")
+
+with open(RULE_SOURCES_FILE, "r") as f:
+    RULE_SOURCES = [line.strip() for line in f if line.strip()]
+

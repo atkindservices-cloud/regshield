@@ -1,0 +1,30 @@
+#!/bin/bash
+set -e echo "Running 
+RegShield US Demo..." 
+python -m 
+regshield.scripts.run_mapper_us 
+python -m 
+regshield.scripts.run_audit_us 
+echo "" echo "FINAL 
+REPORT" python - <<'PY' 
+import json from pathlib 
+import Path p = 
+Path("regshield/data/reports_us/company_report.json") 
+d = 
+json.loads(p.read_text()) 
+print("Company:", 
+d["company"]["name"]) 
+print("Status:", 
+d["summary"]["status"]) 
+print("Score:", 
+d["summary"]["compliance_score"]) 
+print("Failed Rules:", 
+d["summary"]["failed_rules"]) 
+for r in 
+d["failed_details"]:
+    print("\nRule:", 
+    r["rule"]) 
+    print("Status:", 
+    r["status"])
+PY
+

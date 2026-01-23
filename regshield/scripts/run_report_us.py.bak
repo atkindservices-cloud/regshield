@@ -1,0 +1,26 @@
+from pathlib import Path
+import json
+from regshield.agents.report_agent import generate_report
+from regshield.agents.reasoning_agent import explain_result
+
+AUDIT_DIR = Path("regshield/data/audited_rules_us")
+OUT_DIR = Path("regshield/data/reports_us")
+OUT_DIR.mkdir(exist_ok=True)
+
+company = {
+    "name": "Demo SaaS Inc",
+    "country": "US",
+    "industry": "SaaS"
+}
+
+audits = []
+for f in AUDIT_DIR.glob("*.json"):
+    audits.append(json.loads(f.read_text()))
+
+report = generate_report(audits, company)
+
+out = OUT_DIR / "company_report.json"
+report['explanation'] = explain_result(report)
+out.write_text(json.dumps(report, indent=2))
+
+print("REPORT GENERATED:", out)
