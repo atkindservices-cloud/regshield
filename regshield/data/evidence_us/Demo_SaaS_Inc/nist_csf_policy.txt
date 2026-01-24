@@ -1,0 +1,11 @@
+NIST Cybersecurity Framework Policy
+
+This organization follows the NIST CSF framework:
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+
+Security controls, risk management, and incident response
+are aligned with NIST CSF requirements.

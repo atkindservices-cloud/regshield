@@ -1,0 +1,8 @@
+{
+  "rule_id": "FTC-SG-001",
+  "required_documents": [
+    "Written Security Program",
+    "Access Control Policy"
+  ],
+  "description": "FTC Safeguards Rule requires documented security controls"
+}

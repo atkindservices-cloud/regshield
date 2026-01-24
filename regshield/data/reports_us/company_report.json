@@ -1,6 +1,19 @@
 {
-  "company": "Demo SaaS Inc",
-  "status": "PENDING",
-  "score": 0,
-  "failed_rules": []
+  "company": {
+    "name": "Demo SaaS Inc",
+    "country": "US",
+    "industry": "SaaS"
+  },
+  "summary": {
+    "total_rules_checked": 0,
+    "failed_rules": 0,
+    "compliance_score": 100,
+    "status": "PASS"
+  },
+  "failed_details": [],
+  "note": "Advisory only. Not legal opinion.",
+  "failed_rules": [],
+  "score": 100,
+  "explanations": "\u2705 Your company appears compliant based on provided evidence. All evaluated controls are satisfied. Continue maintaining policies and logs.",
+  "status": "PASS"
 }
